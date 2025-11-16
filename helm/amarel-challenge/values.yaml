@@ -5,7 +5,9 @@ replicaCount: 1
 image:
   repository: shalevi55344/amarel-challenge
   pullPolicy: Always
-  tag: "64"
+
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "66"
 
 imagePullSecrets: []
 nameOverride: ""
