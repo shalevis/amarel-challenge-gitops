@@ -7,7 +7,7 @@ image:
   pullPolicy: Always
 
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "18"
+  tag: "66"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -42,7 +42,7 @@ ingress:
   enabled: true
   className: "nginx"
   annotations:
-#    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/use-regex: "true"
 
   hosts:
